@@ -1,0 +1,27 @@
+step-1 
+sudo chown ubuntu /etc/apache2/sites-available
+
+step-2
+open apache config file
+
+step-3
+Paste this after /etc/www/html/api
+
+<Directory />
+     	Options FollowSymLinks
+     	AllowOverride All
+	</Directory>
+	<Directory /var/www/html>
+     	Options Indexes FollowSymLinks MultiViews
+     	AllowOverride All
+     	Order allow,deny
+     	allow from all
+	</Directory>
+
+
+Step-4
+Open putty
+
+sudo a2enmod rewrite
+sudo systemctl restart apache2
+

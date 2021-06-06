@@ -1,0 +1,7 @@
+enable
+sudo a2enconf phpmyadmin.conf
+sudo systemctl restart apache2
+
+disable
+sudo a2disconf phpmyadmin.conf
+sudo systemctl restart apache2

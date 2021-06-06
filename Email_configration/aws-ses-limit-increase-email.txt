@@ -1,0 +1,1 @@
+i have switched my website from shared hosting to aws cloud for better customer experience but how will i verify every email id of my user. we request you to please remove the sandbox from my ses otherwise we have to face so many loses for my business.

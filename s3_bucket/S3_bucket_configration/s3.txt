@@ -1,0 +1,16 @@
+Upload file
+s3object.upload(fileinfo,function(error,data){
+}.bind(this))
+Get file
+s3object.getObject(fileinfo,function(error,data){
+}.bind(this))
+Delete file
+s3object.deleteObject(fileinfo,function(error,data){
+}.bind(this))
+Check file exists
+s3object.headObject(fileinfo,function(error,data){
+if(error && error.code == “NotFound”)
+{
+// file not found
+}
+}.bind(this)

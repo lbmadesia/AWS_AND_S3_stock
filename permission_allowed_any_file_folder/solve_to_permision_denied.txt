@@ -1,0 +1,9 @@
+// give permision of any folder of access (path_here/folder_name)
+
+cd path_here
+
+sudo chmod -R 777 folder_name
+
+
+
+
