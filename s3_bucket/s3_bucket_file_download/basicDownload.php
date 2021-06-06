@@ -5,7 +5,7 @@ require 'vendor/autoload.php';
 use Aws\S3\S3Client;
 use Aws\S3\MultipartUploader;
 
-$s3 = new S3Client(array(
+$s3 = new S3Client(array( 
 	"version" => "latest",
 	"region"  => "ap-south-1",
 	"credentials" => array(
